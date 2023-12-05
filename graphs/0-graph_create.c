@@ -14,7 +14,7 @@ return graph;
 }
 
 int main(void){
-graph_t *graph = NULL;
+graph_t *graph;
 graph = create_graph();
 
 if(!graph){
