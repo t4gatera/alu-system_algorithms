@@ -15,7 +15,7 @@ return graph;
 
 int main(void){
 graph_t *graph;
-graph = create_graph();
+graph = (graph_t*) create_graph();
 
 if(!graph){
 fprintf(stderr, "Failed to create graph\n");
