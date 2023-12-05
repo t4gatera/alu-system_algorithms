@@ -9,7 +9,7 @@ char vertex;
 
 graph_t *create_graph(void){
 graph_t *graph;
-graph = malloc(sizeof(*graph));
+graph = malloc(sizeof(graph_t));
 return graph;
 }
 
