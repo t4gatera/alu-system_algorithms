@@ -1,25 +1,31 @@
 #include<stdlib.h>
 #include<stdio.h>
-#include"graphs.h"
+#include "graphs.h"
 
 struct mygraph{
 int nodes;
 char vertex;
 };
 
-graph_t *create_graph(void){
-graph_t *graph;
-graph = malloc(sizeof(graph_t));
+graph_t *graph_create(){
+graph_t *graph = malloc(sizeof(graph_t));
 return graph;
 }
 
-int main(void){
-graph_t *graph;
-graph = (graph_t*) create_graph();
-if(!graph){
-fprintf(stderr, "Failed to create graph\n");
-return (EXIT_FAILURE);
+int main(void)
+{
+    graph_t *graph;
+
+    graph = graph_create();
+    if (!graph)
+    {
+        fprintf(stderr, "Failed to create graph\n");
+        return (EXIT_FAILURE);
+    }
+
+    printf("Successfully created graph\n");
+
+    return (EXIT_SUCCESS);
 }
-printf("Successfully created a graph\n");
-return (EXIT_SUCCESS);
-}
+
+
