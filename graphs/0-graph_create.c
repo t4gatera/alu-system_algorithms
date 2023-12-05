@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include"graphs.h"
 
-typedef struct mygraph{
+struct mygraph{
 int nodes;
 char vertex;
 };
