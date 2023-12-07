@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>
-#include"graph.h"
+#include"graphs.h"
 
 struct mygraph{
 int nodes;
@@ -9,7 +9,7 @@ bool **edge;
 };
 
 graph_t *create_graph(){
-graph_t *graph = malloc(sizeof(*graph));
+graph_t *graph = (graph_t *) malloc(sizeof(*graph));
 return graph;
 }
 
